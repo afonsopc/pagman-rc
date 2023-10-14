@@ -1,0 +1,139 @@
+:root {
+    --header_color: #222222;
+    --header_border: #353535;
+    --navbar_hover: #5ba5fa28;
+    --navbar_border: #353535;
+    --navbar_active: #0084b8;
+    --navbar-text: #ffff;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    overflow: auto;
+    display: flex;
+    background-color: var(--header_color);
+    border-bottom: 1px solid var(--header_border);
+    width: 100%;
+}
+
+header .logo {
+    display: flex;
+    align-items: center;
+    margin-right: 26.3px;
+    margin-left: 26.3px;
+}
+
+header img {
+    width: 22em;
+}
+
+header ul {
+    padding-left: 0;
+}
+
+.navbar {
+    float: right;
+    width: 100%;
+    overflow: auto;
+    list-style: none;
+}
+
+.navbar a {
+    color: var(--navbar-text);
+    margin: auto 4px;
+    border-radius: 10px;
+    float: left;
+    width: 32%;
+    height: 50%;
+    padding: 10px;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+    border: 1px solid var(--navbar_border);
+}
+
+.navbar a:hover {
+    background-color: var(--navbar_hover);
+}
+
+.navbar a.active {
+    border: 1px solid var(--navbar_active);
+    background-color: var(--navbar_active);
+    color: var(--navbar_active_text);
+}
+
+@media screen and (max-width: 1260px) {
+    header img {
+        width: 15em;
+    }
+    header .logo {
+        margin-right: 32px;
+        margin-left: 31px;
+    }
+}
+
+@media screen and (max-width: 1150px) {
+    .navbar a {
+        font-size: 18px;
+    }
+}
+
+@media screen and (max-width: 1075px) {
+    .navbar a {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: 1030px) {
+    .navbar a {
+        float: none;
+        display: block;
+        width: 90%;
+        margin: 3px auto;
+        text-align: left;
+        font-size: 20px;
+    }
+    header {
+        display: block;
+        padding: 10px;
+        padding-top: 20px;
+    }
+    header img {
+        display: block;
+        margin: auto auto;
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+    header img {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    header .logo {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width: 200px) {
+    header .logo {
+        display: none;
+    }
+    header, header ul {
+        padding: 0;
+        margin: 0;
+    }
+    .navbar a {
+        margin: 0;
+        width: 100%;
+        border-radius: 0;
+    }
+}

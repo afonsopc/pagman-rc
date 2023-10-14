@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=utf-8; text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="navbar.css"/>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg"/>
+    <title>História da Internet - RC</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <a class="logo" href="/"><img src="./assets/logo.png" alt="Redes de Comunicação Logo"></a>
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a class="active" href="">História da Internet</a></li>
+            <li><a href="./o-modelo-osi.html">O Modelo OSI</a></li>
+        </ul>
+    </header>
+
+    <!-- Image with info -->
+    <div class="top_info" style="background-image: url('./assets/web.jpg');">
+        <div class="text">
+            <h1>A história da Internet</h1>
+            <p>
+                A Internet é um sistema global de redes de computadores interligadas que utilizam um conjunto próprio de protocolos (Internet Protocol Suite ou TCP/IP) <br>
+                com o propósito de servir progressivamente usuários no mundo inteiro.
+            </p>
+        </div>
+        <!-- Page contents shortcuts -->
+        <div class="contents">
+            <h2>Conteudos</h2>
+            <ol>
+                <li><a href="#origem">Origem</a></li>
+                <li><a href="#primeira_mensagem">A primeira mensagem enviada</a></li>
+                <li><a href="#crescimento">O cresimento da rede</a></li>
+                <li><a href="#world_wide_web">A "World Wide Web"</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Contents -->
+    <div class="content_right" id="origem">
+        <img src="./assets/sputnik.jpg" alt="Imagem do Suptik." title="Satélite Suptik.">
+        <h1>Origem</h1>
+        <h2 class="small_margin">O lançamento de Sputnik</h3>
+        <p class="medium_margin">
+            No dia 4 de outubro de 1957, na União Soviética, foi lançado o primeiro satélite artificial para a órbita da Terra.
+            Conhecido como Sputnik, não fazia muito, circulava a Terra com o seu transmissor de rádio a fazer bip boops.
+            Após o lançamento do Sputnik, muitos americanos começaram a pensar mais seriamente sobre ciência e tecnologia. 
+            As escolas acrescentaram cursos sobre temas como química, física e cálculo. As empresas receberam subsídios governamentais e investiram-nos em investigação e desenvolvimento científico.
+            O próprio governo federal também formou novas agências, tais como a Administração Nacional de Aeronáutica e Espaço (NASA) e a Agência de Projectos de Investigação Avançada do Departamento de Defesa (ARPA), para desenvolver tecnologias tais como foguetes, armas e computadores.
+        </p>
+        <h2 class="small_margin">A Origem da ARPAnet</h3>
+        <p class="medium_margin">
+            Cientistas e peritos militares estavam especialmente preocupados com o que poderia acontecer no caso de um ataque soviético ao sistema telefónico do país. Apenas um míssil, temiam, poderia destruir toda a rede de linhas e fios que tornava possível uma comunicação eficiente a longa distância. <br> <br>
+            Em 1962, um cientista do M.I.T. e da ARPA chamado J.C.R. Licklider propôs uma solução para este problema: uma &quot;rede galáctica&quot; de computadores que pudessem falar uns com os outros. Tal rede permitiria aos líderes governamentais comunicar mesmo que os soviéticos destruíssem o sistema telefónico. <br> <br>
+            Em 1965, outro cientista da M.I.T. desenvolveu uma forma de enviar informação de um computador para outro que ele chamou de &quot;comutação de pacotes&quot;. A comutação de pacotes decompõe os dados em blocos, ou pacotes, antes de os enviar para o seu destino. Desta forma, cada pacote pode seguir a sua própria rota de lugar para lugar. Sem a comutação de pacotes, a rede de computadores do governo (agora conhecida como ARPAnet) teria sido tão vulnerável a ataques inimigos como o sistema telefónico.
+        </p>
+    </div>
+
+    <div class="content_left" id="primeira_mensagem">
+        <img src="./assets/message_text.jpg" alt="Diário original a detalhar a transmissão da primeira mensagem para a rede de computadores Arpanet, que deu origem à internet." title="Diário original a detalhar a transmissão da primeira mensagem para a rede de computadores Arpanet, que deu origem à internet.">
+        <h1>A primeira mensagem enviada</h1>
+        <p class="small_margin">
+            A 29 de Outubro de 1969, ARPAnet entregou a sua primeira mensagem: uma comunicação &quot;node-to-node&quot; de um computador para outro. (O primeiro computador estava localizado num laboratório de investigação na UCLA e o segundo em Stanford; cada um tinha o tamanho de uma pequena casa). A mensagem &quot;LOGIN&quot; era curta e simples, mas de qualquer modo, crashou a rede ARPA, e o computador de Stanford só conseguiu receber as duas primeiras letras da mensagem "LO".
+        </p>
+    </div>
+
+    <div class="content_right" id="crescimento">
+        <img src="./assets/up.jpg" alt="Gráfico a subir." title="Gráfico a subir.">
+        <h1>O crescimento da rede</h1>
+        <p class="small_margin">
+            No final de 1969, apenas quatro computadores estavam ligados à ARPAnet, mas a rede cresceu de forma constante durante os anos 70. 
+            Em 1971, foi adicionada a ALOHAnet da Universidade do Havai, e dois anos mais tarde foram adicionadas as redes do Colégio Universitário de Londres e do Estabelecimento Real do Radar na Noruega. No entanto, à medida que as redes de computadores comutados por pacotes se multiplicaram, tornou-se mais difícil para eles integrarem-se numa única &quot;Internet&quot; mundial.
+            No final da década de 1970, um cientista informático chamado Vinton Cerf tinha começado a resolver este problema desenvolvendo uma forma de todos os computadores em todas as mini redes do mundo comunicarem uns com os outros. Ele chamou à sua invenção &quot;Protocolo de Controlo de Transmissão&quot;, ou TCP. (Mais tarde, acrescentou um protocolo adicional, conhecido como &quot;Protocolo Internet&quot;. O acrónimo que utilizamos para nos referirmos a estes hoje em dia é TCP/IP). Um escritor descreve o protocolo de Vinton Cerf como &quot;o &#39;handshake&#39; que introduz computadores distantes e diferentes uns aos outros num espaço virtual&quot;.
+        </p>
+    </div>
+
+    <div class="content_left" id="world_wide_web">
+        <img src="./assets/www.jpg" alt="Desenho do mapa mundo com www e dispositivos (carro, frigorírico, aquecedor, etc)." title="Desenho do mapa mundo com www e dispositivos (carro, frigorírico, aquecedor, etc).">
+        <h1>A &quot;World Wide Web&quot;</h1>
+        <p class="small_margin">
+            O protocolo de Vinton Cerf transformou a Internet numa rede mundial. Ao longo da década de 1980, investigadores e cientistas começaram a usá-la para enviar ficheiros e dados de uns computadores para os outros. No entanto, em 1991, a Internet mudou novamente. Nesse ano, um programador informático na Suíça chamado Tim Berners-Lee apresentou a World Wide Web: uma Internet que não era simplesmente uma forma de enviar ficheiros de um lugar para outro, mas era ela própria uma &quot;teia&quot; (dai o nome &quot;World Wide <b>Web</b>&quot;) de informação que qualquer pessoa na Internet podia ver. A Berners-Lee criou a Internet que conhecemos hoje.
+            Desde então, a Internet mudou em muitos aspectos. Em 1992, um grupo de estudantes e investigadores da Universidade de Illinois desenvolveu um navegador sofisticado a que chamaram Mosaic. (Mais tarde tornou-se no Netscape.) O Mosaic oferecia uma forma amigável de pesquisar na Web, permitiu pela primeira vez que os utilizadores vissem palavras e imagens na mesma página, navegar usando &quot;scrollbars&quot; e &quot;links&quot; clicáveis. 
+            Nesse mesmo ano, o Congresso decidiu que a Web podia ser utilizada para fins comerciais. Como resultado, empresas de todos os tipos apressaram-se a criar os seus próprios websites, e os empresários do comércio electrónico começaram a utilizar a Internet para vender mercadorias directamente aos clientes. Mais recentemente, sites de redes sociais como o Facebook tornaram-se uma forma popular de pessoas de todas as idades se manterem ligadas.
+        </p>
+    </div>
+
+    <!-- References -->
+    <div class="references">
+        <h2>Referências</h2>
+        <ul>
+            <li><em><a target="_blank" href="https://www.history.com/topics/inventions/invention-of-the-internet">https://www.history.com/topics/inventions/invention-of-the-internet</a></em></li>
+            <li><em><a target="_blank" href="https://share.america.gov/1969-first-whisper-of-internet/">https://share.america.gov/1969-first-whisper-of-internet/</a></em></li>
+            <li><em><a target="_blank" href="https://pt.wikipedia.org/wiki/Internet">https://pt.wikipedia.org/wiki/Internet</a></em></li> 
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Este website foi desenvolvido por Afonso Coutinho</p>
+        <a href="https://aepassosmanuel.pt" target="_blank">Escola Secundária Passos Manuel</a>
+    </footer>
+</body>
+</html>

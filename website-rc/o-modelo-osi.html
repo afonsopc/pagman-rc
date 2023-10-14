@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="pt-pt">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge; charset=utf-8; text/html">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <link rel="stylesheet" type="text/css" href="navbar.css"/>
+    <link rel="icon" type="image/x-icon" href="./assets/favicon.svg"/>
+    <title>O Modelo OSI - RC</title>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <header>
+        <a class="logo" href="/"><img src="./assets/logo.png" alt="Redes de Comunicação Logo"></a>
+        <ul class="navbar">
+            <li><a href="/">Home</a></li>
+            <li><a href="./historia-da-internet.html">História da Internet</a></li>
+            <li><a class="active" href="">O Modelo OSI</a></li>
+        </ul>
+    </header>
+
+    <!-- Image with info -->
+    <div class="top_info" style="background-image: url('./assets/cables.jpg');">
+        <div class="text">
+            <h1>O Modelo OSI</h1>
+            <p>
+                O modelo OSI (Open System Interconnection) é um modelo conceitual criado pela Organização Internacional de Normalização que permite que <br>
+                diversos sistemas de comunicação se comuniquem usando protocolos <br>
+                padronizados. Em poucas palavras, o modelo OSI fornece um padrão para que diferentes sistemas de computadores comunicar entre si. <br>
+                O modelo OSI pode ser visto como uma linguagem universal para as Redes de computadores. <br>
+                É baseia-se no conceito de dividir um sistema de comunicação em sete camadas abstratas, empilhadas umas em cima das outras. <br>
+            </p>
+        </div>
+        <!-- Page contents shortcuts -->
+        <div class="contents">
+            <h2>Conteudos</h2>
+            <ol>
+                <li><a href="#camadas">As camadas</a></li>
+                <li><a href="#exemplo">Exemplo prático</a></li>
+                <li><a href="#equipamentos">Equipamentos tradicionais e suas camadas</a></li>
+            </ol>
+        </div>
+    </div>
+
+    <!-- Contents -->
+    <div class="content_right" id="camadas">
+        <img src="./assets/osi_layers.jpeg" alt="Camadas do Modelo OSI." title="Camadas do Modelo OSI.">
+        <h1>As Camadas</h2>
+        <ul>
+            <li>
+                <p>Camada <strong>Física</strong>
+                <ul>
+                    <li><p>Esta camada define as características do meio físico de transmissão da rede, conectores, interfaces ou modulação de sinais.</p>
+                    <li><p>RS-232, RJ45, V.34, 100BASE-TX, SDH, DSL, 802.11</p>
+                </ul>
+            </li>
+            <li>
+                <p>Camada de <strong>Dados</strong></p>
+                <ul>
+                    <li><p>Esta camada controla o acesso ao meio físico de transmissão. (Controlo de erros da camada física)</p>
+                    <li><p>Ethernet, 802.11, MAC/LLC, VALN, ATM, HDP, Fibra, Frame Relay, HDLC, PPP, Q.921, Token Ring</p>
+                </ul>
+            </li>
+            <li>
+                <p>Camada de <strong>Rede</strong></p>
+                <ul>
+                    <li><p>Esta camada usa o endereçamento lógico (Endereços de IP) para enviar e receber dados. (Encaminhamento de pacotes)</p>
+                    <li><p>IP, ARP, IPsec, ICMP, IGMP, OSPF</p>
+                </ul>
+            </li>
+            <li>
+                <p>Camada de <strong>Transporte</strong></p>
+                <ul>
+                    <li><p>Esta camada é responsável por encaminhar os dados pelas redes, controla o fluxo de informação, segmentação e o controlo de erros.</p>
+                    <li><p>TCP, UDP, SCTP, SSL, TLS</p>
+                </ul>
+            </li>
+            <li>
+                <p>Camada de <strong>Sessão</strong></p>
+                <ul>
+                    <li><p>Esta camada controla (estabelece, faz gestão e termina) as sessões entre aplicações.</p>
+                    <li><p>Sessão estabelecida em TCP, SIP, RTP, RPC-Named pipes</p>
+                </ul>
+            </li>
+            <li>
+                <p>Camada de <strong>Apresentação</strong></p>
+                <ul>
+                    <li><p>Esta camada assegura a compatibilidade entre as camadas de aplicação de sistemas diferentes.</p>
+                    <li><p>HTML, DOC, JPEG, MP3, AVI, Sockets</p>
+                </ul>
+            </li>
+            <li>
+                <p>Camada de <strong>Aplicação</strong></p>
+                <ul>
+                    <li><p>Esta camada fornece serviçoes às aplicações do utilizador.</p>
+                    <li><p>DNS, WWW/HTTP, P2P, EMAIL/POP, SMTP, Telnet, FTP</p>
+                </ul>
+            </li>
+        </ul>
+    </div>
+
+    <div class="content_left" id="exemplo">
+        <video controls>
+            <source src="./assets/exemplo.webm" type="video/webm" alt="Video a mostrar o exemplo prático abaixo." title="Video a mostrar o exemplo prático abaixo.">
+        </video>
+        <h1>Exemplo prático</h2>
+        <p>
+            Vamos ver como é que esta página chegou ao seu computador.
+        <p>
+        <ol>
+            <li>A camada de <strong>aplicação</strong> (Browser), serve como uma interface para apresentar a página.</li> <br>
+            <li>A camada de <strong>apresentação</strong> é onde o ficheiro HTML desta página se situa, que será recebido no pedido a seguir.</li> <br>
+            <li>Imaginaremos que o pedido do browser para o servidor foi feito a usar o protocolo HTTP.</li> <br>
+            <li>Na camada de <strong>sessão</strong>, é onde a sessão é estabelecida entre o seu computador (Browser) e o servidor (Website).</li> <br>
+            <li>Na camada de <strong>transporte</strong>, o protocolo TCP fornece garantia na entrega de todos os pacotes enviados entre o seu computador e o servidor.</li> <br>
+            <li>Tanto o seu computador e o servidor têm um endereço de IP, isto é uma funcionalidade da camada de <strong>rede</strong>.</li> <br>
+            <li>A camada de <strong>dados</strong>, é onde o seu endereço de IP será traduzido para o endereço MAC (endereço da placa de rede).</li> <br>
+            <li>Agora na camada <strong>física</strong> são os cabos de cobre, fibra óptica, placas de rede, hubs, e outros dispositivos, ajudam nesta ligação física entre o seu computador e o servidor.</li> <br>
+        </ol>
+    </div>
+
+    <div class="content_right" id="equipamentos">
+        <img src="./assets/router.jpeg" alt="Um router." title="Um router.">
+        <h1>Equipamentos tradicionais e suas camadas</h2>
+        <ul>
+            <li><strong>Switch</strong> funciona na camada de <strong>dados</strong>. (Também poderá funcionar em vez na camada de <strong>rede</strong>)</li> <br>
+            <li><strong>Hub</strong> funciona na camada <strong>física</strong>.</li> <br>
+            <li><strong>Router</strong> funciona na camada de <strong>rede</strong>.</li> <br>
+            <li><strong>Browser</strong> funciona na camada de <strong>aplicação</strong>.</li> <br>
+            <li><strong>Ficheiros HTML</strong> funcionam na camada de <strong>apresentação</strong>.</li> <br>
+            <li><strong>Cabos fibra óptica</strong> funcionam na camada <strong>física</strong>.</li> <br>
+            <li><strong>Ethernet</strong> funciona na camada de <strong>dados</strong>.</li> <br>
+            <li><strong>O cliente de email</strong> funciona na camada de <strong>aplicação</strong>.</li> <br>
+            <li><strong>Ficheiros de Vídeo</strong> funcionam na camada de <strong>apresentação</strong>.</li> <br>
+        </ul>
+
+    </div>
+
+    <!-- References -->
+    <div class="references">
+        <h2>Referências</h2>
+        <ul>
+            <li><a target="_blank" href="https://pplware.sapo.pt/tutoriais/networking/redes-a-arquitetura-tcp-ip/">https://pplware.sapo.pt/tutoriais/networking/redes-a-arquitetura-tcp-ip/</a></li>
+            <li><a target="_blank" href="https://pplware.sapo.pt/internet/redes-e-hora-de-recordar-o-modelo-de-referencia-osi/">https://pplware.sapo.pt/internet/redes-e-hora-de-recordar-o-modelo-de-referencia-osi/</a></li>
+            <li><a target="_blank" href="https://paginas.fe.up.pt/~mrs01003/TCP_IP.htm">https://paginas.fe.up.pt/~mrs01003/TCP_IP.htm</a></li> 
+            <li><a target="_blank" href="https://www.youtube.com/watch?v=ckaetMWq0z0">https://www.youtube.com/watch?v=ckaetMWq0z0</a></li>
+        </ul>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p>Este website foi desenvolvido por Afonso Coutinho</p>
+        <a href="https://aepassosmanuel.pt" target="_blank">Escola Secundária Passos Manuel</a>
+    </footer>
+</body>
+</html>
